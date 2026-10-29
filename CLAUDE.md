@@ -17,6 +17,9 @@ This is an early-stage design-system project. There is no `package.json`, build,
 - Components live in `components/`, one file per component, named in PascalCase (e.g. `Button.js`, with styles in `Button.css`).
 - Colours, spacing and radius come from tokens in `tokens/`. Never hard-code hex or px values.
 - Every interactive component has default, hover, focus and disabled states.
+- Build on native elements (`<button>`, `<a>`, `<input>`) so keyboard support comes for free.
+- Show focus with `:focus-visible` using the `--color-focus-ring` / `--focus-ring-width` tokens. Never remove an outline without replacing it.
+- Contrast: text at least 4.5:1; focus rings and borders at least 3:1.
 - Use 2-space indentation.
 - When you add a new terminal command to the workflow, add it to `README.md`.
 

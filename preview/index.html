@@ -44,8 +44,9 @@
   </table>
 
   <h2>Interactive</h2>
-  <p>Hover with the mouse, or press Tab to move focus.</p>
+  <p>Press Tab to move between buttons, Enter or Space to press one. Disabled buttons are skipped.</p>
   <div class="row" id="interactive"></div>
+  <p id="status" role="status"></p>
 
   <script type="module">
     import { loadTokens } from '../tokens/load-tokens.js';
@@ -86,8 +87,13 @@
     }
 
     const interactive = document.getElementById('interactive');
+    const status = document.getElementById('status');
     for (const variant of variants) {
-      interactive.append(Button({ label: `${variant} button`, variant }));
+      const label = `${variant} button`;
+      const onClick = () => {
+        status.textContent = `You pressed: ${label}`;
+      };
+      interactive.append(Button({ label, variant, onClick }));
       interactive.append(Button({ label: `Disabled ${variant}`, variant, disabled: true }));
     }
   </script>
