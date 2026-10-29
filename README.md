@@ -28,3 +28,7 @@ Day 9: installed Claude Code
 ### Claude Code
 
 - `claude` — start Claude Code in the current folder so I can ask it to read, explain, and edit my project.
+
+### Previewing in the browser
+
+- `python3 -m http.server` — start a tiny web server in the current folder so the browser can load my files. Run it from the project folder, then open http://localhost:8000/preview/ to see the Button states. Stop it with Ctrl+C.

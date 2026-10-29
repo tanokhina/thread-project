@@ -1,1 +1,10 @@
-{ "color-primary": "#3B5BDB" }
+{
+  "color-primary": "#3B5BDB",
+  "color-primary-hover": "#364FC7",
+  "color-primary-subtle": "#EDF2FF",
+  "color-on-primary": "#FFFFFF",
+  "color-surface": "#FFFFFF",
+  "color-focus-ring": "#748FFC",
+  "color-disabled-bg": "#E9ECEF",
+  "color-disabled-text": "#ADB5BD"
+}
